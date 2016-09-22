@@ -31,7 +31,7 @@ public class ParticleApplet extends Applet {
     }
 
     @Override
-    public void start() {
+    public synchronized void start() {
         int n = 10;
 
         if (threads == null) {
@@ -50,7 +50,7 @@ public class ParticleApplet extends Applet {
     }
 
     @Override
-    public void stop() {
+    public synchronized void stop() {
         if (threads != null) {
             for (int i = 0; i < threads.length; i++) {
                 threads[i].interrupt();

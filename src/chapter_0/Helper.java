@@ -2,10 +2,10 @@ package chapter_0;
 
 /**
  * @author Doug Lea
+ *         Dummy standin for referenced generic "Helper" classes
  */
 public class Helper {
 
-    // Dummy standin for referenced generic "Helper" classes
     public void handle() {
     }
 

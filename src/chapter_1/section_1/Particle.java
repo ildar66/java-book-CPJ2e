@@ -4,6 +4,11 @@ import java.awt.*;
 import java.util.Random;
 /*
  * Particle class defines a completely unrealistic model of movable bodies
+ *
+ * Some simple concurrent rule:
+ * • Always lock during updates to object fields.
+ * • Always lock during access of possibly updated object fields.
+ * • Never lock when invoking methods on other objects.
  */
 
 public class Particle {

@@ -2,6 +2,9 @@ package chapter_1.section_1;
 
 import java.awt.*;
 
+/*
+ * Provides a drawing area for all of the Particles
+ */
 public class ParticleCanvas extends Canvas {
 
     private Particle[] particles = new Particle[0];

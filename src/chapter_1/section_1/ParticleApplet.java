@@ -2,6 +2,10 @@ package chapter_1.section_1;
 
 import java.applet.Applet;
 
+/*
+ *  The start and stop methods are synchronized to preclude concurrent starts or stops.
+ *  Nullness of variable threads is used as a convenient state indicator.
+ */
 public class ParticleApplet extends Applet {
 
     protected Thread[] threads = null;
@@ -34,7 +38,7 @@ public class ParticleApplet extends Applet {
     public synchronized void start() {
         int n = 10;
 
-        if (threads == null) {
+        if (isStopped()) {
             Particle[] particles = new Particle[n];
             for (int i = 0; i < n; i++) {
                 particles[i] = new Particle(50, 50);
@@ -49,9 +53,13 @@ public class ParticleApplet extends Applet {
         }
     }
 
+    private boolean isStopped() {
+        return (threads == null);
+    }
+
     @Override
     public synchronized void stop() {
-        if (threads != null) {
+        if (!isStopped()) {
             for (int i = 0; i < threads.length; i++) {
                 threads[i].interrupt();
             }

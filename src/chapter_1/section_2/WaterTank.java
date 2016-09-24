@@ -10,8 +10,11 @@ class WaterTank {
 
     final float capacity; //Attributes
     float currentVolume = 0.0f; //Invariant (between zero and capacity)
-    WaterTank overflow;
 
+    //each waterTank could be mapped to a separate active object by loading in a description to a
+    //separate JVM, and then forever allowing it to simulate the defined actions.
+    WaterTank overflow;
+    
     WaterTank(float cap) {
         capacity = cap;
         //...

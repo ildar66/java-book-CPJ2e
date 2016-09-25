@@ -11,7 +11,7 @@ import java.util.Random;
  * • Never lock when invoking methods on other objects.
  */
 
-public class Particle {
+class Particle {
 
     protected int x;
     protected int y;

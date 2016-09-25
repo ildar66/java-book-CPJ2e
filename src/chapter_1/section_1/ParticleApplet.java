@@ -6,7 +6,7 @@ import java.applet.Applet;
  *  The start and stop methods are synchronized to preclude concurrent starts or stops.
  *  Nullness of variable threads is used as a convenient state indicator.
  */
-public class ParticleApplet extends Applet {
+class ParticleApplet extends Applet {
 
     protected Thread[] threads = null;
     protected final ParticleCanvas canvas = new ParticleCanvas(100);

@@ -22,7 +22,7 @@ class AdaptedTank implements Tank {
         return delegate.getVolume();
     }
 
-    protected void checkVolumeInvariant() throws java.lang.AssertionError {
+    protected void checkVolumeInvariant() throws AssertionError {
         float v = getVolume();
         float c = getCapacity();
         if (!(v >= 0.0 && v <= c)) {
@@ -31,7 +31,7 @@ class AdaptedTank implements Tank {
     }
 
     @Override
-    public void transferWater(float amount) throws OverflowException, UnderflowException {
+    public synchronized void transferWater(float amount) throws OverflowException, UnderflowException {
         checkVolumeInvariant();
 
         try {

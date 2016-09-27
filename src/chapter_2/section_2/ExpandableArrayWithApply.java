@@ -17,9 +17,9 @@ class ExpandableArrayWithApply extends ExpandableArray {
     }
     /**    USAGE:
      v.applyToAll(new Procedure() {
-        public void apply(Object obj) {
-            System.out.println(obj);
-        }
+     public void apply(Object obj) {
+     System.out.println(obj);
+     }
      } );
      */
 }

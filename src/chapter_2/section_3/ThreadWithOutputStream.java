@@ -10,7 +10,7 @@ In addition to receiving confined references along call chains, the method invoc
    The static method Thread.currentThread() can be called from any method
    and returns the Thread object of the caller.
 */
-public class ThreadWithOutputStream extends Thread {
+class ThreadWithOutputStream extends Thread {
 
     private OutputStream output;
 

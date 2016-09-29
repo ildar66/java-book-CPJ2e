@@ -8,7 +8,7 @@ import java.awt.*;
   This Point class is defined as a simple record-style class with public x and y fields,
   so it would be unwise to share instances across threads.
 */
-public class Plotter { // fragments
+class Plotter { // fragments
 
     // ...
 

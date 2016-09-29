@@ -3,6 +3,12 @@ package chapter_2.section_3;
 /*
     Adapters para
     Adapters can be used to wrap bare unsynchronized ground objects within fully synchronized host objects
+
+    The java.util.Collection framework uses an Adapter-based scheme to allow layered
+    synchronization of collection classes. Except for Vector and Hashtable, the basic collection
+    classes (such as java.util.ArrayList) are unsynchronized. However, anonymous
+    synchronized Adapter classes can be constructed around the basic classes using for example:
+    List l = Collections.synchronizedList(new ArrayList());
 */
 class SynchedPoint {
 

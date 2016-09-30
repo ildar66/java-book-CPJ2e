@@ -1,6 +1,6 @@
 package chapter_2.section_3;
 
-// temp comment
+//used in Confinement Within Groups (Ring)
 class Printer {
 
     public void printDocument(byte[] doc) { /* ... */

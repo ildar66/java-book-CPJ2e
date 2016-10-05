@@ -9,7 +9,7 @@
         * abrupt termination,
         * continuation (ignoring failures),
         * rollback,
-        * rollforward,
+        * rollforward(recovery),
         * retry, and
         * delegation to handlers.
  * Abrupt termination and continuation are the two most extreme responses.

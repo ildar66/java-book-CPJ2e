@@ -14,7 +14,7 @@ While there are other good choices for the underlying data structure (including 
 This class would be horribly inefficient if used in contexts involving frequent modifications of large
 collections, but it is well suited for most multicast applications
 */
-class CopyOnWriteArrayList { // Incomplete
+public class CopyOnWriteArrayList { // Incomplete
 
     protected Object[] array = new Object[0];
 

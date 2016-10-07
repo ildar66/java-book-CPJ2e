@@ -7,6 +7,10 @@ The simplest way to arrange that blocked threads eventually recheck conditions i
   notifyAll in methods that cause relevant state changes. In turn, the simplest way to do this is to
   define utility methods that encapsulate assignment, issuing a notification upon any change in value.
 For example,here is a first pass at BoundedCounter:
+
+    NOTE that within synchronized methods, the ORDER in which a "notifyAll" is placed does not matter.
+    No awakened threads will be able to continue until the synchronization lock is released.
+    Just as a matter of style, most people put notifications last in method bodies.
 */
 
 public class SimpleBoundedCounter {

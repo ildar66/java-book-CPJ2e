@@ -65,5 +65,14 @@ TIMED WAITS. The timed versions of the wait method, wait(long msecs) and wait(lo
     contention, scheduling policies, and timer granularities. (There is no guarantee about granularity. Most
     JVM implementations have observed response times in the 1-20ms range for arguments less than
     1ms.)
+
+The THREAD.sleep(long msecs) method uses a timed wait, but does not tie up the current
+    object's synchronization lock. It acts as if it were defined as:
+    if (msecs != 0) {
+        Object s = new Object();
+        synchronized(s) { s.wait(msecs); }
+    }
+    Of course, a system need not implement sleep in exactly this way. Note that sleep(0) pauses
+    for at least no time, whatever that means.
  */
 package chapter_3.section_2;

@@ -48,20 +48,3 @@ class TimeOutBoundedCounter {
     }
 
 }
-/*
-    Busy Waits NOTE
-    Implementing guards via waiting and notification methods is nearly always superior to using an
-    optimistic-retry-style busy-wait "spinloop" of the form:
-       protected void busyWaitUntilCond() {
-        while (!cond)
-            Thread.yield();
-      }
-    Busy-waits can waste an unbounded amount of CPU time spinning uselessly.
-    Busy-waits have drawbacks that make them poor choices for implementing most guarded actions. The
-    contrasts between the two techniques help explain why suspension-based waiting and notification
-    methods are defined as they are.
-
-    The main exceptions are those cases in which you somehow know that the condition must become
-    true within some very short, bounded amount of time. In such cases, the time wasted spinning might
-    be less than the time required to suspend and resume threads.
-*/

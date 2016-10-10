@@ -60,4 +60,8 @@ class TimeOutBoundedCounter {
     Busy-waits have drawbacks that make them poor choices for implementing most guarded actions. The
     contrasts between the two techniques help explain why suspension-based waiting and notification
     methods are defined as they are.
+
+    The main exceptions are those cases in which you somehow know that the condition must become
+    true within some very short, bounded amount of time. In such cases, the time wasted spinning might
+    be less than the time required to suspend and resume threads.
 */

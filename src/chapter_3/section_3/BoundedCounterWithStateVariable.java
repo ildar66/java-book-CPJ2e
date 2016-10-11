@@ -1,7 +1,7 @@
 package chapter_3.section_3;
 
 // State variables
-public class BoundedCounterWithStateVariable {
+class BoundedCounterWithStateVariable {
 
     static final long MIN = 0; // minimum allowed value
 

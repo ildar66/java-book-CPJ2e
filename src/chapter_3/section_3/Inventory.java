@@ -10,8 +10,10 @@ One policy choice is:
         want to return a failure indication.
         • Two or more retrieve operations should not execute at the same time, since one may be
         in the process of removing the item requested by the others.
+
+        For example, here the conflict set is merely: { (store, retrieve), (retrieve, retrieve) }.
 */
-public class Inventory {
+class Inventory {
 
     protected final Hashtable<String, Object> items = new Hashtable<>();
     protected final Hashtable<String, String> suppliers = new Hashtable<>();

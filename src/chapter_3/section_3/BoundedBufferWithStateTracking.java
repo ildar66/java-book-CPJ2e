@@ -1,7 +1,7 @@
 package chapter_3.section_3;
 
 // Tracking State. Channels and bounded buffers
-public class BoundedBufferWithStateTracking {
+class BoundedBufferWithStateTracking {
 
     protected final Object[] array; // the elements
     protected int putPtr = 0; // circular indices

@@ -1,4 +1,4 @@
-package chapter_2.section_4;
+package chapter_0;
 
 // Read-Only Adapters para
 public class InsufficientFunds extends Exception {

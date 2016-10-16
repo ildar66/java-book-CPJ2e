@@ -1,5 +1,7 @@
 package chapter_2.section_4;
 
+import chapter_0.InsufficientFunds;
+
 /*
     //Read-Only Adapters para
 

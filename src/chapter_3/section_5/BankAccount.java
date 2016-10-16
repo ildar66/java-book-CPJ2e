@@ -1,8 +1,8 @@
 package chapter_3.section_5;
 
-import chapter_2.section_4.InsufficientFunds;
+import chapter_0.InsufficientFunds;
 
-// Example
+// Example section
 /*
 To illustrate some common techniques, consider a service that automatically transfers money from a
 savings account to a checking account whenever the checking balance falls below some threshold, but

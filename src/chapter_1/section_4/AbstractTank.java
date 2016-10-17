@@ -1,7 +1,7 @@
 package chapter_1.section_4;
 
-import chapter_0.OverflowException;
-import chapter_0.UnderflowException;
+import common.OverflowException;
+import common.UnderflowException;
 
 // abstract class that automates the control sequence via an application of the Template Method pattern
 abstract class AbstractTank implements Tank {

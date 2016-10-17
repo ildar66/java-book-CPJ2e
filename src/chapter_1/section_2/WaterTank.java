@@ -1,7 +1,7 @@
 package chapter_1.section_2;
 
-import chapter_0.OverflowException;
-import chapter_0.UnderflowException;
+import common.OverflowException;
+import common.UnderflowException;
 
 /**
  * Code sketch
@@ -14,7 +14,7 @@ class WaterTank {
     //each waterTank could be mapped to a separate active object by loading in a description to a
     //separate JVM, and then forever allowing it to simulate the defined actions.
     WaterTank overflow;
-    
+
     WaterTank(float cap) {
         capacity = cap;
         //...

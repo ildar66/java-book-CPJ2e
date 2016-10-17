@@ -1,7 +1,7 @@
 package chapter_1.section_4;
 
-import chapter_0.OverflowException;
-import chapter_0.UnderflowException;
+import common.OverflowException;
+import common.UnderflowException;
 
 // Before/after techniques may be applied to check invariants around the transferWater operation.
 public interface Tank {

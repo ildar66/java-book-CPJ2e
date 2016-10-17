@@ -1,4 +1,4 @@
-package chapter_0;
+package common;
 
 public class OverflowException extends Exception {
 

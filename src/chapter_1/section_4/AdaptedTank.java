@@ -1,7 +1,7 @@
 package chapter_1.section_4;
 
-import chapter_0.OverflowException;
-import chapter_0.UnderflowException;
+import common.OverflowException;
+import common.UnderflowException;
 
 // Adapters can be used to provide before/after control merely by wrapping the delegated call within the control actions.
 class AdaptedTank implements Tank {

@@ -7,7 +7,7 @@ import EDU.oswego.cs.dl.util.concurrent.Sync;
  * // Subclassing. Readers and Writers
  * This class or its subclasses may also be repackaged to support the ReadWriteLock interface
  * discussed in § 2.5.2. This can be done using inner classes. (A similar strategy is used by the
- * util.concurrent versions of ReadWriteLock, which also include some optimizations
+ * common.concurrent versions of ReadWriteLock, which also include some optimizations
  * discussed in § 3.7 to minimize unnecessary notifications.) For example:
  */
 class RWLock extends ReadWrite implements ReadWriteLock { // Incomplete

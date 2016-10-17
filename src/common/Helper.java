@@ -1,4 +1,4 @@
-package chapter_0;
+package common;
 
 /**
  * @author Doug Lea

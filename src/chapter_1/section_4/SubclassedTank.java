@@ -1,7 +1,7 @@
 package chapter_1.section_4;
 
-import chapter_0.OverflowException;
-import chapter_0.UnderflowException;
+import common.OverflowException;
+import common.UnderflowException;
 
 /**
  * Created by User on 25.09.2016.

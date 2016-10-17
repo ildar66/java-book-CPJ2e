@@ -1,6 +1,6 @@
 package chapter_3.section_5;
 
-import chapter_0.InsufficientFunds;
+import common.InsufficientFunds;
 
 /**
  * // Example section

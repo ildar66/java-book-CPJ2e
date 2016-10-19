@@ -1,6 +1,18 @@
 package chapter_3.section_7;
 
-// Delegated actions. Bounded buffers.
+/**
+ * // Delegated actions. Bounded buffers.
+ * As a further performance enhancement, notifications here use notify, since the conditions for its
+ * use (discussed in § 3.2.4.2) are met: (1) Each waiting task in each helper is waiting on the same
+ * logical condition (non-emptiness for take, and non-fullness for put). (2) Each notification enables
+ * at most a single thread to continue — each put enables one take, and each take enables one
+ * put. (3) We can re-notify to deal with interruptions.
+ * And to squeeze another bit of efficiency out of this, it is simple here to (conservatively) track whether
+ * there are any waiting threads, and issue notify only if there can be threads that need notifying. The
+ * performance effect of this tactic varies across JVM implementations. As notify operations become
+ * increasingly cheap, the minor bookkeeping overhead here to avoid calls becomes decreasingly
+ * worthwhile.
+ */
 final class BoundedBufferWithDelegates {
 
     private Object[] array;

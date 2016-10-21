@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
 
-// Event-driven tasks
+/**
+ * Event-driven tasks @ see {@link PollingWorker}
+ */
+
 /* Event-driven IO tasks are similar in form to GUI event handlers. A session-based design can be
         converted into an event-driven form by:
         • Isolating the basic per-command functionality in a reworked task run method that reads one
